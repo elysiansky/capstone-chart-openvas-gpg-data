@@ -7,7 +7,7 @@ replicaCount: 1
 gpg-data:
   replicas: 2
   image:
-    repository: elysiansky/capstone-chart-openvas-gpg-data
+    repository: elysiansky/capstone-openvas-gpg-data
     tag: 16a309f-amd64
   service:
     type: ClusterIP
