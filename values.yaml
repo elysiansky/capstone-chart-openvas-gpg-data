@@ -4,7 +4,7 @@
 
 replicaCount: 1
 
-openvasVulnerabilityTests:
+gpg-data:
   replicas: 2
   image:
     repository: elysiansky/capstone-chart-openvas-gpg-data
