@@ -8,7 +8,7 @@ gpg-data:
   replicas: 2
   image:
     repository: elysiansky/capstone-openvas-gpg-data
-    tag: 4b1e394-amd64
+    tag: 83c8960-amd64
   service:
     type: ClusterIP
   resources:
