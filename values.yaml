@@ -40,9 +40,9 @@ securityContext: {}
   # runAsNonRoot: true
   # runAsUser: 1000
 
-service:
-  type: ClusterIP
-  port: 80
+#service:
+#  type: ClusterIP
+#  port: 80
 
 ingress:
   enabled: false
@@ -123,14 +123,5 @@ gpg-data:
       cpu: 100m
       memory: 128Mi
 
-livenessProbe:
-  httpGet:
-    path: /
-    port: 80  # Ensure this port matches the port the application is listening on
-
-readinessProbe:
-  httpGet:
-    path: /
-    port: 80  # Ensure this port matches the port the application is listening on
 
 
