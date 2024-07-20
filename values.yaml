@@ -40,6 +40,9 @@ securityContext: {}
   # runAsNonRoot: true
   # runAsUser: 1000
 
+service:
+  type: ClusterIP
+  port: 80
 
 ingress:
   enabled: false
@@ -112,7 +115,6 @@ gpg-data:
     tag: 0ec50cd-amd64
   service:
     type: ClusterIP
-    port: 80
   resources:
     limits:
       cpu: 100m
