@@ -123,3 +123,14 @@ gpg-data:
       cpu: 100m
       memory: 128Mi
 
+livenessProbe:
+  httpGet:
+    path: /
+    port: 80  # Ensure this port matches the port the application is listening on
+
+readinessProbe:
+  httpGet:
+    path: /
+    port: 80  # Ensure this port matches the port the application is listening on
+
+
